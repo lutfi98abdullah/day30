@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day30';
+
+  image = '/assets/ostrich_2.jpg'
+  count = 0
+
+  imageClicked($event: string) {
+    console.info(">>>>>>app.component: image clicked", $event)
+    this.image = $event
+    this.count++
+  }
 }
